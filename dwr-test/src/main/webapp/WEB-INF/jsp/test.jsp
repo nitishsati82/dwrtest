@@ -6,7 +6,6 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script type='text/javascript' src='/dwr/engine.js'></script>
-<script type='text/javascript' src='/dwr/interface/DemoDwr.js'></script>
 <script type='text/javascript' src='/dwr/interface/Message.js'></script>
 <script type="text/javascript" src="/dwr/util.js" ></script>
 
@@ -17,9 +16,6 @@ $(document).ready(function() {
 	update();
 });
 
-         DemoDwr.echo(' ', function (str) {
-        alert(str);
-    });
          function update(){
              	Message.getMessage(function(data) {
                  dwr.util.setValue("divResponse", data);
